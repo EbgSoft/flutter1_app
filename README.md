@@ -1,6 +1,4 @@
-# flutter1_app
-
-Flutter Ders-2
+# Flutter Ders-2
 
 Konu : Basit bir UI ile iki adet input alan ve aritmetik toplama işlemi yaparak
  sonucu ekranda gösteren bir basit hesap makinesi uygulaması oluşturası.
