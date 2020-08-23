@@ -1,10 +1,26 @@
 # flutter1_app
 
-simple input output application
+Flutter Ders-2
+
+Konu : Basit bir UI ile iki adet input alan ve aritmetik toplama işlemi yaparak
+ sonucu ekranda gösteren bir basit hesap makinesi uygulaması oluşturası.
+
+1-Stattefull bir widget oluşturma
+2-UI oluşturma
+3-Değişkenle tanımlama
+4-Aritmetik İşlmeleri bir fonksiyona yaptırma.
+5-Style Tanımlama ve kullama
+6-Input Contoller tanımlama
+
+Yeni Kullanılacak Widgetlar
+
+1-TextFormField
+2-RaisedButton
+3-SizedBox
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Flutter application geliştirme için kaynaklar
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -14,3 +30,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
