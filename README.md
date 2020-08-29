@@ -6,6 +6,8 @@ Uygulama giriş fonksiyonu ve bir stateless bir widget oluşturalım.
 
 Sayfanın ortasında yazı yazdıralım ve bunu renklendirelim.
 
+- [Flutter 1 Video](https://www.instagram.com/tv/CEC8CRdFC5-/?utm_source=ig_web_copy_link)
+
 # Flutter Ders: 2
 
 Konu : Basit bir UI ile iki adet input alan ve aritmetik toplama işlemi yaparak
@@ -24,6 +26,8 @@ Kullanılacak Widgetlar
 2-RaisedButton
 3-SizedBox
 
+- [Flutter 2 Video](https://www.instagram.com/tv/CEPvJFuFju_/?utm_source=ig_web_copy_link)
+
 # Flutter Ders: 3
 
 Konu: Coloum and Row wigdet oluşturma
@@ -36,6 +40,7 @@ Kullanılacak Widgetlar
 1-Column
 2-Row
 
+- [Flutter 3 Video](https://www.instagram.com/tv/CEeblo5FOJV/?utm_source=ig_web_copy_link)
 
 ## Getting Started
 
