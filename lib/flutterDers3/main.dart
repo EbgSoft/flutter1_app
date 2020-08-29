@@ -67,11 +67,11 @@ Widget _buildColumn(int colId)
 Widget _buildRow(int colId)
 {
   return Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    children: <Widget>[
-      Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.green)),
-      Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.yellow)),
-      Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.red)),
-    ]
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: <Widget>[
+        Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.green)),
+        Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.yellow)),
+        Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.red)),
+      ]
   );
 }

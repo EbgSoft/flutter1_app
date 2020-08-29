@@ -1,4 +1,12 @@
-# Flutter Ders-2
+# Flutter Ders: 1
+
+Merhaba öncelikle Flutter ile  basit uygulama oluşturalım.
+
+Uygulama giriş fonksiyonu ve bir stateless bir widget oluşturalım.
+
+Sayfanın ortasında yazı yazdıralım ve bunu renklendirelim.
+
+# Flutter Ders: 2
 
 Konu : Basit bir UI ile iki adet input alan ve aritmetik toplama işlemi yaparak
  sonucu ekranda gösteren bir basit hesap makinesi uygulaması oluşturası.
@@ -10,11 +18,24 @@ Konu : Basit bir UI ile iki adet input alan ve aritmetik toplama işlemi yaparak
 5-Style Tanımlama ve kullama
 6-Input Contoller tanımlama
 
-Yeni Kullanılacak Widgetlar
+Kullanılacak Widgetlar
 
 1-TextFormField
 2-RaisedButton
 3-SizedBox
+
+Flutter Ders: 3
+
+Konu: Coloum and Row wigdet oluşturma
+
+1-Column ve Row Element ekleme ve bunları sayfa için yerleştirme
+2-Sayfayı kullanılacak bölümlemelere ayırma
+
+Kullanılacak Widgetlar
+
+1-Column
+2-Row
+
 
 ## Getting Started
 
