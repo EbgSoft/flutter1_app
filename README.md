@@ -24,7 +24,7 @@ Kullanılacak Widgetlar
 2-RaisedButton
 3-SizedBox
 
-Flutter Ders: 3
+# Flutter Ders: 3
 
 Konu: Coloum and Row wigdet oluşturma
 
