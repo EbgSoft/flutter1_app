@@ -42,17 +42,29 @@ Kullanılacak Widgetlar
 
 - [Flutter 3 Video](https://www.instagram.com/tv/CEeblo5FOJV/?utm_source=ig_web_copy_link)
 
-## Getting Started
+# Flutter Ders 4
+
+Konu : Image Görüntüleme
+
+-Projeye assets ekleme / tanımlama (Icons / Images / Fonts vb)
+-Local Image dosyasını yükleme
+-Networkd Image dosyasını yükleme
+
+Kullanılacak Widgetlar
+
+1-Column
+2-Row
+3-Image
+4-Listview
+
+- [Flutter 4 Video](https://www.instagram.com/tv/CEwmuaClDOE)
+
+
+## Kaynaklar
 
 Flutter application geliştirme için kaynaklar
 
-A few resources to get you started if this is your first Flutter project:
-
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+- [online documentation](https://flutter.dev/docs)
 

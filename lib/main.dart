@@ -1,24 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
+void main(){
+  runApp(MyFlutter4());
 }
 
-class MyApp extends StatelessWidget {
+class MyFlutter4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter Ders 3",
-      color: Colors.blue,
-      theme: ThemeData(
-        // Define the default brightness and colors.
-        brightness: Brightness.light,
-        primaryColor: Colors.lightBlue[800],
-        accentColor: Colors.cyan[600],
-        // Define the default font family.
-        fontFamily: 'Tahoma',
-      ),
+      title: "Flutter Ders 4",
       home: MyPage(),
     );
   }
@@ -33,45 +24,50 @@ class _MyPageState extends State<MyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Flutter Ders 3"),),
-      body: _buildPage(),
+      appBar: AppBar(
+        title: Text("Flutter Ders 4")
+      ),
+      body: _buildPage()
     );
   }
 }
 
-Widget _buildPage()
-{
-  return Stack(children: <Widget>[
-    _buildRow(1),
-    _buildColumn(1),
-  ],);
-}
-
-Widget _buildColumn(int colId)
-{
-  return Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    crossAxisAlignment: CrossAxisAlignment.center,
+Widget _buildPage(){
+  return ListView(
+   // crossAxisAlignment: CrossAxisAlignment.center,
+   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: <Widget>[
-      Text("Column " + colId.toString(),style: TextStyle(fontSize: 33,color: Colors.black54),),
-      Text("Column " + colId.toString(),style: TextStyle(fontSize: 33,color: Colors.blue),),
-      Text("Column " + colId.toString(),style: TextStyle(fontSize: 33,color: Colors.orange),),
-      _buildRow(1),
-      _buildRow(2),
-      _buildRow(3),
+      Text("Takip Etmeyi Unutmayın!!!",style: TextStyle(fontSize: 44,color: Colors.green),),
+      _buildLocalImage("assets/images/flutter-1.png"),
+      _buildLocalImage("assets/images/flutter-2.png"),
+      _buildLocalImage("assets/images/flutter-3.png"),
+      _buildLocalImage("assets/images/flutter-4.png"),
+      _buildNetworkImage("http://ebg-soft.com/img/showcase/Me_Ma_512.jpg"),
+      _buildNetworkImage("http://ebg-soft.com/img/showcase/picture_puzzle_512x512.jpg"),
+      _buildNetworkImage("http://ebg-soft.com/img/showcase/Math-Pu_named_512x512.jpg"),
+      _buildNetworkImage("http://ebg-soft.com/img/showcase/Me_Ma_512.jpg"),
+
     ],
   );
 }
 
-
-Widget _buildRow(int colId)
+Widget _buildLocalImage(String imageAdresi)
 {
   return Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    mainAxisAlignment: MainAxisAlignment.center,
     children: <Widget>[
-      Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.green)),
-      Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.yellow)),
-      Text("Row " + colId.toString(),style: TextStyle(fontSize: 33,backgroundColor: Colors.red)),
-    ]
+      Image(image: AssetImage(imageAdresi),width: 350, height: 350,)
+    ],
+  );
+}
+
+Widget _buildNetworkImage(String imageAdresi)
+{
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+      Image(image: NetworkImage(imageAdresi),width: 350, height: 350,),
+      SizedBox(width: 10,height: 10,)
+    ],
   );
 }

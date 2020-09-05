@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'styles.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyFlutter2());
 }
 
-class MyApp extends StatelessWidget {
+class MyFlutter2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

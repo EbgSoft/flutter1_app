@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyFlutter3());
 }
 
-class MyApp extends StatelessWidget {
+class MyFlutter3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
