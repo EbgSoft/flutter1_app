@@ -42,7 +42,7 @@ Kullanılacak Widgetlar
 
 - [Flutter 3 Video](https://www.instagram.com/tv/CEeblo5FOJV/?utm_source=ig_web_copy_link)
 
-# Flutter Ders 4
+# Flutter Ders: 4
 
 Konu : Image Görüntüleme
 
@@ -59,6 +59,19 @@ Kullanılacak Widgetlar
 
 - [Flutter 4 Video](https://www.instagram.com/tv/CEwmuaClDOE)
 
+# Flutter Ders: 5
+
+Konu : Buttons, Events (onPressed, onTap,onDoubleTap)
+
+-Button basılması sonrası işlem yapılmasını sağlayacağız.
+-Ekran üzerindeki bir nesnenin tıklanması sonrası aksiyon algılanması inceleyeceğiz.
+
+-RaisedButtons
+-FlatButtons
+-IconButtons
+-GestureDetector
+
+- [Flutter 5 Video](https://www.instagram.com/tv/CFChqUgFrC9)
 
 ## Kaynaklar
 
