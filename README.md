@@ -2,11 +2,14 @@
 
 [Kurulum] (https://flutter.dev/docs/get-started/install)
 
-[windows](https://flutter.dev/docs/get-started/install/windows)
+[Windows](https://flutter.dev/docs/get-started/install/windows)
+
 [Mac](https://flutter.dev/docs/get-started/install/macos)
+
 [Linux](https://flutter.dev/docs/get-started/install/linux)
 
 [Dart Dokümantasyonu](https://dart.dev/get-dart)
+
 [Dart Deneme Console Dartpad ](https://dartpad.dev/0df636e00f348bdec2bc1c8ebc7daeb1)
 
 Download Andorid Studio
