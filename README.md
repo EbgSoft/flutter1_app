@@ -1,20 +1,20 @@
-# Flutter Kurulumu
+# Flutter Kurulum
 
-[Kurumlum] (https://flutter.dev/docs/get-started/install)
+[Kurulum] (https://flutter.dev/docs/get-started/install)
 
-[windows] (https://flutter.dev/docs/get-started/install/windows)
+[windows](https://flutter.dev/docs/get-started/install/windows)
+[Mac](https://flutter.dev/docs/get-started/install/macos)
+[Linux](https://flutter.dev/docs/get-started/install/linux)
 
-[Mac] (https://flutter.dev/docs/get-started/install/macos)
-
-[Linux] (https://flutter.dev/docs/get-started/install/linux)
-
-[Dart Dokümantasyonu] (https://dart.dev/get-dart)
+[Dart Dokümantasyonu](https://dart.dev/get-dart)
 [Dart Deneme Console Dartpad ](https://dartpad.dev/0df636e00f348bdec2bc1c8ebc7daeb1)
 
 Download Andorid Studio
 [Android Studio] (https://developer.android.com/studio)
 
 Alternatif olarak Ide olarak Visul Studio Code kullanılabilir.
+[Visual Studio Code](https://code.visualstudio.com/download)
+
 
 # Flutter Ders: 1
 
