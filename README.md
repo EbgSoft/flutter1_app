@@ -1,3 +1,21 @@
+# Flutter Kurulumu
+
+[Kurumlum] (https://flutter.dev/docs/get-started/install)
+
+[windows] (https://flutter.dev/docs/get-started/install/windows)
+
+[Mac] (https://flutter.dev/docs/get-started/install/macos)
+
+[Linux] (https://flutter.dev/docs/get-started/install/linux)
+
+[Dart Dokümantasyonu] (https://dart.dev/get-dart)
+[Dart Deneme Console Dartpad ](https://dartpad.dev/0df636e00f348bdec2bc1c8ebc7daeb1)
+
+Download Andorid Studio
+[Android Studio] (https://developer.android.com/studio)
+
+Alternatif olarak Ide olarak Visul Studio Code kullanılabilir.
+
 # Flutter Ders: 1
 
 Merhaba öncelikle Flutter ile  basit uygulama oluşturalım.
@@ -5,6 +23,13 @@ Merhaba öncelikle Flutter ile  basit uygulama oluşturalım.
 Uygulama giriş fonksiyonu ve bir stateless bir widget oluşturalım.
 
 Sayfanın ortasında yazı yazdıralım ve bunu renklendirelim.
+
+Material Design Widgetlerı kullanmak için "material.dart" paketinin eklenmesi gerekir.
+import 'package:flutter/material.dart';
+
+IOS stlye görünüm için "cupertino.dart" paketinin eklenmesi gerekir.
+import 'package:flutter/cupertino.dart';
+
 
 - [Flutter 1 Video](https://www.instagram.com/tv/CEC8CRdFC5-/?utm_source=ig_web_copy_link)
 
