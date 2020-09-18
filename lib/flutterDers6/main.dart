@@ -13,7 +13,10 @@ class BekletenIslem {
 
   bool _beklenenIslemSync()
   {
-    sleep(Duration(seconds:5));
+    //sleep not available on the web because Javascript is really async-only.
+    //sleep(Duration(seconds:5));
+    Duration(seconds: 5);
+
   }
 
   Future<String> _getIPAddress() async {
@@ -33,6 +36,7 @@ class MyFlutter6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Flutter Ders 6",
       home: MyPage(),
     );
@@ -68,9 +72,10 @@ class _MyPageState extends State<MyPage> with SingleTickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Image.asset("assets/images/ebgsoftlogo.png",width: 100, height: 50,),
+            SizedBox(width: 5,),
             Text("Flutter 6")
           ],
         )
@@ -80,7 +85,7 @@ class _MyPageState extends State<MyPage> with SingleTickerProviderStateMixin {
            mainAxisAlignment: MainAxisAlignment.center,
            crossAxisAlignment: CrossAxisAlignment.center,
            children: [
-             Text("Future, Async, Sync",style: TextStyle(fontSize: 33),),
+             Text("Future, Sync,  Async ",style: TextStyle(fontSize: 33),),
              SizedBox(height: 45.0,),
              Text("Bittimi: " + bittiMi.toString(),style: TextStyle(fontSize: 22,
                  backgroundColor: bittiMi? Colors.green: Colors.red),),
