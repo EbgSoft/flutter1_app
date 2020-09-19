@@ -14,13 +14,11 @@ class BekletenIslem {
   bool _beklenenIslemSync()
   {
     //sleep not available on the web because Javascript is really async-only.
-    //sleep(Duration(seconds:5));
-    Duration(seconds: 5);
-
+    sleep(const Duration(seconds:5));
   }
 
   Future<String> _getIPAddress() async {
-    final url = 'https://httpbin.org/ip';
+    final url = 'https://httpbin.org/delay/5';
     final response = await http.get(url);
     String ip = jsonDecode(response.body)['origin'];
     return ip;
@@ -85,7 +83,7 @@ class _MyPageState extends State<MyPage> with SingleTickerProviderStateMixin {
            mainAxisAlignment: MainAxisAlignment.center,
            crossAxisAlignment: CrossAxisAlignment.center,
            children: [
-             Text("Future, Sync,  Async ",style: TextStyle(fontSize: 33),),
+             Text("Future, Async , Await ",style: TextStyle(fontSize: 33),),
              SizedBox(height: 45.0,),
              Text("Bittimi: " + bittiMi.toString(),style: TextStyle(fontSize: 22,
                  backgroundColor: bittiMi? Colors.green: Colors.red),),

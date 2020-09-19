@@ -101,6 +101,26 @@ Konu : Buttons, Events (onPressed, onTap,onDoubleTap)
 
 - [Flutter 5 Video](https://www.instagram.com/tv/CFChqUgFrC9)
 
+# Flutter Ders: 6
+
+Konu : Flutter Dersleri 6 , Future, Aysnc, Await , Asenkron Programlama
+
+Future Keyword kullanımı;
+Verinin ekrana getirilmesinde gecikme olacağı durumlarda,
+Hesaplama gibi işlemin uzun sürebileceği durumlarda,
+Networkten okuma yapılması gerekeceği durumlarda,
+verinin ekrana getirilmesi için kullanılır.
+
+Veri gecikmeli geleceği durumlarda async kullanmazsanız ekranda donma olacaktır.
+Ve gösterilmek istenen veri ekranda gösterilmeyecektir.
+
+
+-Future , aysnc , await anahtar kelimeleri.
+-Projeye Paket ekleme pubspec.yaml
+-Network üzerinden veri okumak
+
+- [Flutter 6 Video](https://www.instagram.com/tv/CFChqUgFrC9)
+
 ## Kaynaklar
 
 Flutter application geliştirme için kaynaklar
