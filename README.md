@@ -119,7 +119,7 @@ Ve gösterilmek istenen veri ekranda gösterilmeyecektir.
 -Projeye Paket ekleme pubspec.yaml
 -Network üzerinden veri okumak
 
-- [Flutter 6 Video](https://www.instagram.com/tv/CFChqUgFrC9)
+- [Flutter 6 Video](https://youtu.be/Gh6lRCQn6A4)
 
 ## Kaynaklar
 
