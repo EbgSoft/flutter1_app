@@ -20,7 +20,7 @@ class BekletenIslem {
   }
 
   Future<String> _IPAdress() async {
-    final response = await http.get("https://httpbin.org/delay/10");
+    final response = await http.get("https://httpbin.org/delay/5");
 
     String ip = jsonDecode(response.body)['origin'];
     return ip;
