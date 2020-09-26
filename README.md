@@ -103,7 +103,7 @@ Konu : Buttons, Events (onPressed, onTap,onDoubleTap)
 
 # Flutter Ders: 6
 
-Konu : Flutter Dersleri 6 , Future, Aysnc, Await , Asenkron Programlama
+Konu : Future, Aysnc, Await , Asenkron Programlama
 
 Future Keyword kullanımı;
 Verinin ekrana getirilmesinde gecikme olacağı durumlarda,
@@ -121,11 +121,29 @@ Ve gösterilmek istenen veri ekranda gösterilmeyecektir.
 
 - [Flutter 6 Video](https://youtu.be/Gh6lRCQn6A4)
 
+# Flutter Ders: 7
+
+Konu : AnimationController, SingleTickerProviderStateMixin, CustomPainter
+
+-Animations & Ekrana cizgiler oluşturma
+-SingleTickerProviderStateMixin - > State
+-AnimationController controller  -> init ve dispose
+-Animation<double> animation -> animation 'nın süre ve parameterleri tanımlamak için
+-CustomPainter -> ekranda cizgiler oluşturma için kullanacağımız widget
+
+Kullanılacak Keywordlar;
+-AnimationController , Animation ,SingleTickerProviderStateMixin
+-Canvas,Painting, Drawing
+
+- [Flutter 7 Video](https://www.youtube.com/watch?v=JP35mIFu3qw)
+
+
 ## Kaynaklar
 
 Flutter application geliştirme için kaynaklar
 
+- [Flutter Online Docs] (https://flutter.dev/docs)
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-- [online documentation](https://flutter.dev/docs)
+
 

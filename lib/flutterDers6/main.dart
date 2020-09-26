@@ -49,7 +49,6 @@ class MyPage extends StatefulWidget {
 class _MyPageState extends State<MyPage> with SingleTickerProviderStateMixin {
   AnimationController _controller;
   String ipAdres="";
-
   bool bittiMi=false;
 
   @override
