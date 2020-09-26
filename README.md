@@ -126,13 +126,19 @@ Ve gösterilmek istenen veri ekranda gösterilmeyecektir.
 Konu : AnimationController, SingleTickerProviderStateMixin, CustomPainter
 
 -Animations & Ekrana cizgiler oluşturma
--SingleTickerProviderStateMixin - > State
--AnimationController controller  -> init ve dispose
--Animation<double> animation -> animation 'nın süre ve parameterleri tanımlamak için
--CustomPainter -> ekranda cizgiler oluşturma için kullanacağımız widget
+
+-SingleTickerProviderStateMixin -> With kelimesi ile State Extent edilerek kullanılır.
+
+-AnimationController controller -> Init ve dispose methodları içerisinde kullanılır.
+
+-Animation<double> animation -> animation 'nın süre ve parameterleri tanımlamak için kullanılır.
+
+-CustomPainter -> ekranda (Canvas) cizgiler oluşturma için kullanacağımız widgettır.
 
 Kullanılacak Keywordlar;
+
 -AnimationController , Animation ,SingleTickerProviderStateMixin
+
 -Canvas,Painting, Drawing
 
 - [Flutter 7 Video](https://www.youtube.com/watch?v=JP35mIFu3qw)
