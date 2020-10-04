@@ -1,84 +1,99 @@
 import 'package:flutter/material.dart';
-import 'package:flutter1_app/flutterDers7/main.dart';
 
 void main() {
-  runApp(Myflutter7());
+  runApp(TabBarWidgetSayfalar());
 }
 
-class Myflutter7 extends StatelessWidget {
+//Scaffold TabbedAppBar Widget
+class TabBarWidgetSayfalar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Flutter7",
-      color: Colors.blue,
-      home: Scaffold(
-        body: SekilOlusturucu()
-      )
+      home: DefaultTabController(
+        length: secenekler.length,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text("Flutter 8 TabBar Widgets"),
+            bottom: TabBar(
+              tabs: secenekler.map<Widget>((Secenek sec) {
+                  return Tab(
+                    text: sec.title,
+                    icon: Icon(sec.icon),
+                  );
+              }).toList()
+            ),
+          ),
+          body: TabBarView(
+              children: secenekler.map<Widget>((Secenek sec) {
+                return SecilenNesne(secim:sec);
+              }).toList(),
+          ),
+          bottomNavigationBar: TabBar(
+              unselectedLabelColor: Colors.blue,
+              labelColor: Colors.orange,
+              tabs: secenekler.map<Widget>((Secenek sec) {
+                return Padding(
+                  padding: EdgeInsets.only(bottom: 30),
+                  child:Tab(
+                    text: sec.title,
+                    icon: Icon(sec.icon),
+                  )
+                );
+
+              }).toList()
+          ),
+        ),
+
+      ),
     );
   }
 }
 
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
+
+//Secenek Class
+
+class Secenek {
+  final String title;
+  final IconData icon;
+
+  const Secenek({this.title, this.icon});
 }
 
-class _MyAppState extends State<MyApp>
-    with SingleTickerProviderStateMixin {
-  AnimationController controller;
-  Animation<double> animation;
+//Static Secenekler Listesi
 
-  @override
-  void initState() {
-    super.initState();
+const List<Secenek> secenekler=<Secenek> [
+  Secenek(title: 'ARABA',icon: Icons.directions_car),
+  Secenek(title: 'BİSİKLET',icon: Icons.directions_bike),
+  Secenek(title: 'OTOBÜS',icon: Icons.directions_bus),
+  Secenek(title: 'TREN',icon: Icons.directions_railway),
+  Secenek(title: 'YAYA',icon: Icons.directions_walk)
+];
 
-    controller = AnimationController(
-      duration: Duration(seconds: 3),
-      vsync: this,
-    );
 
-    animation = CurvedAnimation(
-      parent: controller,
-      curve: Curves.decelerate,
-    ).drive(Tween(begin: 0, end: 2));
-  }
+//Secenekleri ekrana getirecek olan Widget
 
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
+class SecilenNesne extends StatelessWidget {
+
+  final Secenek secim;
+
+  const SecilenNesne({Key key, this.secim}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        controller
-          ..reset()
-          ..forward();
-      },
-      child: RotationTransition(
-        turns: animation,
-        child: Stack(
+    final textstyle= Theme.of(context).textTheme.headline3;
+    return Card(
+      child: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
-            Positioned.fill(
-              child: FlutterLogo(),
-            ),
-            Center(
-              child: Text(
-                'Tüm Video YouToBe ta. Ebgsoft',
-                style: TextStyle(
-                  fontSize: 44.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.red
-                ),
-              ),
-            ),
+            Icon(secim.icon,size: 130, color: Colors.orange,),
+            Text(secim.title,style: textstyle),
           ],
         ),
       ),
     );
   }
 }
+

@@ -143,6 +143,15 @@ Kullanılacak Keywordlar;
 
 - [Flutter 7 Video](https://www.youtube.com/watch?v=JP35mIFu3qw)
 
+# Flutter Ders: 8
+
+Konu : TabBar ve Tabview ile Sayfa Geçişleri nasıl yapılır.
+
+Kullanılacak Widgets ve Keywords;
+
+AppBar, DefaultTabController, TabBar, TabBarView
+
+- [Flutter 8 Video](https://youtu.be/1qjiaULD4SQ)
 
 ## Kaynaklar
 
