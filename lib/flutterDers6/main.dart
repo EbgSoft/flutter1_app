@@ -5,23 +5,21 @@ import 'dart:io';
 
 class BekletenIslem {
 
-  Future<String> _beklenenIslemAsync() async {
+  String _beletenIslem() {
 
-    return Future.delayed(const Duration(seconds: 5), () => "Bitti");
-
+    //Web için kullanılamazi Js zaten async çalışma için optimize edilmiştir.
+    sleep(const Duration(seconds:5));
+    return "Bitti";
   }
 
-  bool _beklenenIslemSync()
-  {
-    //sleep not available on the web because Javascript is really async-only.
-    //sleep(Duration(seconds:5));
-    Duration(seconds: 5);
+  Future<String> _bekletenIslemAsync() async {
 
+    return Future.delayed(Duration(seconds: 5), () => "Bitti" );
   }
 
-  Future<String> _getIPAddress() async {
-    final url = 'https://httpbin.org/ip';
-    final response = await http.get(url);
+  Future<String> _IPAdress() async {
+    final response = await http.get("https://httpbin.org/delay/5");
+
     String ip = jsonDecode(response.body)['origin'];
     return ip;
   }
@@ -50,8 +48,7 @@ class MyPage extends StatefulWidget {
 
 class _MyPageState extends State<MyPage> with SingleTickerProviderStateMixin {
   AnimationController _controller;
-  String ipAdress="";
-
+  String ipAdres="";
   bool bittiMi=false;
 
   @override
@@ -85,43 +82,25 @@ class _MyPageState extends State<MyPage> with SingleTickerProviderStateMixin {
            mainAxisAlignment: MainAxisAlignment.center,
            crossAxisAlignment: CrossAxisAlignment.center,
            children: [
-             Text("Future, Sync,  Async ",style: TextStyle(fontSize: 33),),
+             Text("Future, Async , Await ",style: TextStyle(fontSize: 33),),
              SizedBox(height: 45.0,),
              Text("Bittimi: " + bittiMi.toString(),style: TextStyle(fontSize: 22,
                  backgroundColor: bittiMi? Colors.green: Colors.red),),
              SizedBox(height: 15.0,),
-             Text("IPAdress: " + ipAdress,style: TextStyle(fontSize: 22,
+             Text("IPAdress: " + ipAdres,style: TextStyle(fontSize: 22,
               backgroundColor: bittiMi? Colors.green: Colors.red),),
              SizedBox(height: 15.0,),
-             RaisedButton(
-               color: Colors.blue,
-               child: Text("Bekleten Islem Async",style: TextStyle(fontSize: 18),),
-               onPressed: () async {
-                 final bekleten = new BekletenIslem();
-                 setState(() {
-                   bittiMi=false;
-                 });
-                 try {
-                   bittiMi = await bekleten._beklenenIslemAsync()!=null;
-                    setState(() {
 
-                    });
-                   print(bittiMi);
-                 } catch (error) {
-                   print(error);
-                 }
-               },
-             ),
              RaisedButton(
                color: Colors.blue,
                child: Text("Bekleten Islem Sync",style: TextStyle(fontSize: 18),),
                onPressed: () async {
-                 final bekleten = new BekletenIslem();
+                 final bekleten =  BekletenIslem();
                  setState(() {
                    bittiMi=false;
                  });
                  try {
-                   bittiMi = await bekleten._beklenenIslemSync()!=null;
+                   bittiMi = bekleten._beletenIslem()!=null;
                    setState(() {
                      bittiMi=true;
                    });
@@ -133,18 +112,36 @@ class _MyPageState extends State<MyPage> with SingleTickerProviderStateMixin {
              ),
              RaisedButton(
                color: Colors.blue,
-               child: Text("What is My IP",style: TextStyle(fontSize: 18),),
+               child: Text("Bekleten Islem Async",style: TextStyle(fontSize: 18),),
                onPressed: () async {
-                 final example1 = new BekletenIslem();
+                 final bekleten =  BekletenIslem();
+                 setState(() {
+                   bittiMi=false;
+                 });
                  try {
-                   ipAdress = await example1._getIPAddress();
+                   bittiMi = await bekleten._bekletenIslemAsync()!=null;
                    setState(() {
 
                    });
-                   print(ipAdress);
+                   print(bittiMi);
                  } catch (error) {
                    print(error);
                  }
+               },
+             ),
+             RaisedButton(
+               color: Colors.blue,
+               child: Text("What is My IP",style: TextStyle(fontSize: 18),),
+               onPressed: () async {
+                 final bekleten =  BekletenIslem();
+                 try{
+                    ipAdres= await bekleten._IPAdress();
+                    bittiMi= ipAdres!="";
+                    print(ipAdres);
+                  } catch(ex)
+                  {
+
+                  }
                },
              ),
            ],

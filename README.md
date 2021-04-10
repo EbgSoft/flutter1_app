@@ -101,11 +101,64 @@ Konu : Buttons, Events (onPressed, onTap,onDoubleTap)
 
 - [Flutter 5 Video](https://www.instagram.com/tv/CFChqUgFrC9)
 
+# Flutter Ders: 6
+
+Konu : Future, Aysnc, Await , Asenkron Programlama
+
+Future Keyword kullanımı;
+Verinin ekrana getirilmesinde gecikme olacağı durumlarda,
+Hesaplama gibi işlemin uzun sürebileceği durumlarda,
+Networkten okuma yapılması gerekeceği durumlarda,
+verinin ekrana getirilmesi için kullanılır.
+
+Veri gecikmeli geleceği durumlarda async kullanmazsanız ekranda donma olacaktır.
+Ve gösterilmek istenen veri ekranda gösterilmeyecektir.
+
+
+-Future , aysnc , await anahtar kelimeleri.
+-Projeye Paket ekleme pubspec.yaml
+-Network üzerinden veri okumak
+
+- [Flutter 6 Video](https://youtu.be/Gh6lRCQn6A4)
+
+# Flutter Ders: 7
+
+Konu : AnimationController, SingleTickerProviderStateMixin, CustomPainter
+
+-Animations & Ekrana cizgiler oluşturma
+
+-SingleTickerProviderStateMixin -> With kelimesi ile State Extent edilerek kullanılır.
+
+-AnimationController controller -> Init ve dispose methodları içerisinde kullanılır.
+
+-Animation<double> animation -> animation 'nın süre ve parameterleri tanımlamak için kullanılır.
+
+-CustomPainter -> ekranda (Canvas) cizgiler oluşturma için kullanacağımız widgettır.
+
+Kullanılacak Keywordlar;
+
+-AnimationController , Animation ,SingleTickerProviderStateMixin
+
+-Canvas,Painting, Drawing
+
+- [Flutter 7 Video](https://www.youtube.com/watch?v=JP35mIFu3qw)
+
+# Flutter Ders: 8
+
+Konu : TabBar ve Tabview ile Sayfa Geçişleri nasıl yapılır.
+
+Kullanılacak Widgets ve Keywords;
+
+AppBar, DefaultTabController, TabBar, TabBarView
+
+- [Flutter 8 Video](https://youtu.be/1qjiaULD4SQ)
+
 ## Kaynaklar
 
 Flutter application geliştirme için kaynaklar
 
+- [Flutter Online Docs] (https://flutter.dev/docs)
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-- [online documentation](https://flutter.dev/docs)
+
 
