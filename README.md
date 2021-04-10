@@ -34,7 +34,8 @@ IOS stlye görünüm için "cupertino.dart" paketinin eklenmesi gerekir.
 import 'package:flutter/cupertino.dart';
 
 
-- [Flutter 1 Video](https://www.instagram.com/tv/CEC8CRdFC5-/?utm_source=ig_web_copy_link)
+- [Flutter 1 Video Youtube](https://www.youtube.com/watch?v=2bcKzEeUZqA)
+- [Flutter 1 Video Instagram](https://www.instagram.com/tv/CEC8CRdFC5-/?utm_source=ig_web_copy_link)
 
 # Flutter Ders: 2
 
@@ -54,6 +55,7 @@ Kullanılacak Widgetlar
 2-RaisedButton
 3-SizedBox
 
+- [Flutter 2 Video Youtube](https://www.youtube.com/watch?v=k1w89w8guDs&list=PLVcLtU1ZBEOgsAEMoqOP2pZCQP2uCks-4&index=1)
 - [Flutter 2 Video](https://www.instagram.com/tv/CEPvJFuFju_/?utm_source=ig_web_copy_link)
 
 # Flutter Ders: 3
@@ -67,7 +69,7 @@ Kullanılacak Widgetlar
 
 1-Column
 2-Row
-
+- [Flutter 3 Video Youtube](https://www.youtube.com/watch?v=Q1Kj7KFCF2c&list=PLVcLtU1ZBEOgsAEMoqOP2pZCQP2uCks-4&index=2)
 - [Flutter 3 Video](https://www.instagram.com/tv/CEeblo5FOJV/?utm_source=ig_web_copy_link)
 
 # Flutter Ders: 4
@@ -85,6 +87,7 @@ Kullanılacak Widgetlar
 3-Image
 4-Listview
 
+- [Flutter 4 Video Youtube](https://www.youtube.com/watch?v=LZPOyceb-8Q&list=PLVcLtU1ZBEOgsAEMoqOP2pZCQP2uCks-4&index=3)
 - [Flutter 4 Video](https://www.instagram.com/tv/CEwmuaClDOE)
 
 # Flutter Ders: 5
@@ -99,6 +102,7 @@ Konu : Buttons, Events (onPressed, onTap,onDoubleTap)
 -IconButtons
 -GestureDetector
 
+- [Flutter 5 Video Youtube](https://www.youtube.com/watch?v=-muH4BCWFIo&list=PLVcLtU1ZBEOgsAEMoqOP2pZCQP2uCks-4&index=5)
 - [Flutter 5 Video](https://www.instagram.com/tv/CFChqUgFrC9)
 
 # Flutter Ders: 6
@@ -119,7 +123,7 @@ Ve gösterilmek istenen veri ekranda gösterilmeyecektir.
 -Projeye Paket ekleme pubspec.yaml
 -Network üzerinden veri okumak
 
-- [Flutter 6 Video](https://youtu.be/Gh6lRCQn6A4)
+- [Flutter 6 Video Youtube](https://youtu.be/Gh6lRCQn6A4)
 
 # Flutter Ders: 7
 
@@ -141,7 +145,7 @@ Kullanılacak Keywordlar;
 
 -Canvas,Painting, Drawing
 
-- [Flutter 7 Video](https://www.youtube.com/watch?v=JP35mIFu3qw)
+- [Flutter 7 Video Youtube](https://www.youtube.com/watch?v=JP35mIFu3qw)
 
 # Flutter Ders: 8
 
@@ -151,7 +155,7 @@ Kullanılacak Widgets ve Keywords;
 
 AppBar, DefaultTabController, TabBar, TabBarView
 
-- [Flutter 8 Video](https://youtu.be/1qjiaULD4SQ)
+- [Flutter 8 Video Youtube](https://youtu.be/1qjiaULD4SQ)
 
 ## Kaynaklar
 
